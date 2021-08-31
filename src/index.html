@@ -2,13 +2,52 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
+    <title>Preautorización</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+
+   <header>
+
+    <section align= right>
+      <form action='search.php'>
+        <input type='text'>
+        <input type='submit' value='Buscar'>
+      </form>
+    </section>
+
+    <center>
+      <h1>
+        La Toscana Restaurante
+      </h1>
+    </center>
+    
+    </header>
+
+    <main>
+      <div id='principal'>
+        <p>De lo único que debes ocuparte, es de disfrutar tu comida...</p>
+      </div>
+     
+      <div id='second'>
+      <p>Ingresa aquí tu número de tarjeta de crédito para realizar la preautorización</p>
+
+      <label for="ccn">Tarjeta de Crédito N°:</label>
+
+       <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="16" placeholder="xxxx xxxx xxxx xxxx">
+      </div>
+    </main>
+    <footer>
+      <center>
+        <p1>Avenida Angamos 1335, Valdivia</p1>
+      </center>
+      <center>
+        <p2>Fono: +63 267 4486</p2>
+      </center>
+      
+    </footer>
     <script src="index.js" type="module"></script>
+  </center>
   </body>
 </html>
