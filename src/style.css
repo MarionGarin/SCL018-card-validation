@@ -1,25 +1,81 @@
+header {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    color: #f5f5f1;
+    text-shadow:  black 0.1em 0.1em 0.2em;
+
+}
+/* A continuación se fija el estilo general del cuerpo */
+/*Se usa un background color grisáceo más un blend-mode overlay para generar opacidad en la imagen de fondo*/
 body{
-    background-color:#ffffff;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 18px;
-
-
-}
-#principal{
-    background-color:#FCFF82;
-    height: 150px;
-    width: 600px;
-    margin: 0px auto;
-    font-size: 40px;
-    color: #7B7373;
-    
+    margin: 0;
+    padding: 0;
+    background-image: url("drinks.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(235, 217, 217, 0.486);
+    background-blend-mode: overlay;
     
 }
-#second{
-    background-color: #EDA7EE;
-    height: 150px;
-    width: 600px;
+/* A continuación se fija el estilo de la primera sección */
+.introduction{
+    background-color:#bbadbbb8;
+    height: 45px;
+    width: 800px;
     margin: 0px auto;
-    font-size: 30px;
-   
+    /*opacity: 0.8; */
+    border-radius: 25px;
+    font-size: 23px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: rgb(48, 23, 23);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+/* A continuación se fija el estilo de la segunda sección */
+.preauthorize{
+    background-color: #fdff83;
+    height: 300px;
+    width: 800px;
+    margin: 0px auto;
+    opacity: 0.8;
+    border-radius: 25px;
+    font-size: 20px;
+    font-stretch: ultra-condensed; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: rgb(48, 23, 23);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+         
+}
+/* A continuación se fija el estilo del botón de Validación */
+button{
+    background-color: #1d7720; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: right;
+    font-size: 16px;
+
+}
+/* A continuación se aplica sombreado sobre el botón cuando el cursor está encima*/
+button:hover {
+    background-color: #48b64b; 
+
+}
+/*A continuación se fija el estilo del texto del footer*/
+footer{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: rgb(48, 23, 23);
+
 }

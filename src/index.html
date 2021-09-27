@@ -1,53 +1,71 @@
 <!DOCTYPE html>
 <html>
+
   <head>
+
     <meta charset="utf-8">
     <title>Preautorización</title>
     <link rel="stylesheet" href="style.css" />
+
   </head>
 
   <body>
 
-   <header>
+     <header>       
 
-    <section align= right>
-      <form action='search.php'>
-        <input type='text'>
-        <input type='submit' value='Buscar'>
-      </form>
-    </section>
+      <h1> La Toscana Restaurante</h1>
 
-    <center>
-      <h1>
-        La Toscana Restaurante
-      </h1>
-    </center>
-    
-    </header>
+     </header>
 
-    <main>
-      <div id='principal'>
-        <p>De lo único que debes ocuparte, es de disfrutar tu comida...</p>
-      </div>
+
+     <main> <!--Se divide en dos segmentos: "introduction" y "preauthorize"-->
      
-      <div id='second'>
-      <p>Ingresa aquí tu número de tarjeta de crédito para realizar la preautorización</p>
-
-      <label for="ccn">Tarjeta de Crédito N°:</label>
-
-       <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="16" placeholder="xxxx xxxx xxxx xxxx">
+      <div class="introduction">
+        <p1><strong>De lo único que debes ocuparte ese día, es de disfrutar tu comida...</strong></p1>
       </div>
+      <br>
+
+      <div class="preauthorize">
+        <p2>Ingresa aquí tu número de tarjeta de crédito para realizar la preautorización:</p2><br>
+        <br>
+        <label for="creditCardNumber">Tarjeta de Crédito N°</label>
+        <input type="tel" id="creditCardNumber" name="creditCarNumber" placeholder="xxxx-xxxx-xxxx-xxxx" 
+        maxlength="16" size="16">
+      <!--En el input se determinó type "tel" (teléfono) para propiciar la aparición de teclado numérico en móviles-->
+      <br><br>
+      <!--Menú con opciones de tipo de tarjeta de crédito-->
+        <label for="cardType">Selecciona tipo de tarjeta</label>
+          <select id="cardType">
+          <option value="americanExpress">American Express</option> 
+          <option value="diners">Diners</option> 
+          <option value="mastercard">Mastercard</option> 
+          <option value="visa">Visa</option>
+          </select><br><br>
+
+      <!--Botón de validación que activará el index.js-->
+        <button type="button" id="validate">VALIDAR</button>
+        <br>
+        <br>
+       <!-- <p id= "answer"></p>-->
+         </div>
+         
     </main>
+
+    <br>
+
     <footer>
-      <center>
-        <p1>Avenida Angamos 1335, Valdivia</p1>
-      </center>
-      <center>
-        <p2>Fono: +63 267 4486</p2>
-      </center>
-      
+
+      <!--Datos de contacto-->
+       <p><em>Avenida Angamos 1335, Valdivia / @latoscanarestaurante</em></p>
+        
+       <p><em><strong>+63 267 4486</strong></em></p>
+            
     </footer>
+
+    <!--módulos enlazados-->
     <script src="index.js" type="module"></script>
-  </center>
+    <script src="validator.js" type="module"></script>
+  
   </body>
+
 </html>
