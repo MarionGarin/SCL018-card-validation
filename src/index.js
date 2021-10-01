@@ -1,6 +1,6 @@
 import validator from "./validator.js";
 
-   document.getElementById("validate").addEventListener("click", checkIn); /*Capturador que activa initialCheckIn*/
+   document.getElementById("validate").addEventListener("click", checkIn); /*Capturador que activa CheckIn*/
 
    function checkIn() {/*verifica el contenido ingresado y decide qué hacer con él a través de ifs y elses*/
   
@@ -11,11 +11,11 @@ import validator from "./validator.js";
          alert("Estamos procesando tu solicitud"); 
 
            if (validator.isValid(contentToValidate)) {
-           alert("Tu tarjeta N°  " + validator.maskify(contentToValidate) + " se ha registrado exitosamente"
+           alert("Felicitaciones, la reserva ha sido confirmada y tu tarjeta N°  " + validator.maskify(contentToValidate) + " se ha registrado exitosamente"
            );
 
           } else {
-           alert("Oops... el número ingresado no es válido; por favor intenta nuevamente");
+           alert("Oops... el número ingresado no es válido. Verifica que ingresaste los dígitos correctamente o intenta nuevamente con otro documento");
            }
 
       } else {
