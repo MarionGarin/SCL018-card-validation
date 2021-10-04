@@ -43,6 +43,7 @@ const validator = {
             return false;
             
           }
+          
             
         },
             
@@ -64,17 +65,3 @@ export default validator;
 
 
 
-
-//Seleccionar los números pares, ok
-
-//Multiplicar los números pares por 2, ok
-
-//Sumar todos los dígitos que resultaron ser dobles (a todos los >9 restar 9 y eso equivale a la suma de 2 dígitos), ok
-
-//Sumar todos los dígitos del array, 
-
-//Dividir el resultado por 10
-
-//Evaluar el residuo
-
-//Puede que use array.join() o array.filter()
